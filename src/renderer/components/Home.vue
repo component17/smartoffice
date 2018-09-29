@@ -76,32 +76,38 @@
             async flash(line){
                 if(line === 1){
                     await this.actionLineOne();
-                    await this.timeout(500);
+                    await this.timeout(300);
+
+                    await this.actionLineOne();
+                    await this.timeout(300);
 
                     await this.actionLineOne();
                     await this.timeout(500);
 
                     await this.actionLineOne();
-                    await this.timeout(1000);
+                    await this.timeout(300);
 
                     await this.actionLineOne();
-                    await this.timeout(500);
+                    await this.timeout(300);
 
                     await this.actionLineOne();
                 }
 
                 if(line === 2){
                     await this.actionLineTwo();
-                    await this.timeout(500);
+                    await this.timeout(300);
+
+                    await this.actionLineTwo();
+                    await this.timeout(300);
 
                     await this.actionLineTwo();
                     await this.timeout(500);
 
                     await this.actionLineTwo();
-                    await this.timeout(1000);
+                    await this.timeout(300);
 
                     await this.actionLineTwo();
-                    await this.timeout(500);
+                    await this.timeout(300);
 
                     await this.actionLineTwo();
                 }
@@ -110,23 +116,44 @@
             async disco(){
                 await this.actionLineOne();
                 await this.actionLineTwo();
-                await this.timeout(500);
+                await this.timeout(300);
 
                 await this.actionLineOne();
                 await this.actionLineTwo();
-                await this.timeout(500);
+                await this.timeout(300);
 
                 await this.actionLineOne();
-                await this.timeout(500);
+                await this.timeout(300);
 
                 await this.actionLineTwo();
-                await this.timeout(500);
+                await this.timeout(300);
 
                 await this.actionLineOne();
-                await this.timeout(500);
+                await this.timeout(300);
 
                 await this.actionLineTwo();
-                await this.timeout(500);
+                await this.timeout(300);
+
+                await this.actionLineOne();
+                await this.timeout(300);
+
+                await this.actionLineTwo();
+                await this.timeout(300);
+
+                await this.actionLineOne();
+                await this.timeout(300);
+
+                await this.actionLineTwo();
+                await this.timeout(300);
+
+                await this.actionLineTwo();
+                await this.timeout(300);
+
+                await this.actionLineOne();
+                await this.timeout(300);
+
+                await this.actionLineOne();
+                await this.timeout(300);
 
                 await this.actionLineOne();
                 await this.actionLineTwo();
