@@ -1,11 +1,11 @@
 <template>
     <div>
         <el-row v-if="isLineOne">
-            <el-button type="success" style="width: 100%" @click="power(1)">Линия 1</el-button>
+            <el-button :type="lineOne ? 'default' : 'success'" style="width: 100%" @click="power(1)">Линия 1</el-button>
         </el-row>
 
         <el-row style="margin-top: 20px" v-if="isLineTwo">
-            <el-button type="success" style="width: 100%" @click="power(2)">Линия 2</el-button>
+            <el-button :type="lineTwo ? 'default' : 'success'" style="width: 100%" @click="power(2)">Линия 2</el-button>
         </el-row>
 
         <el-row style="margin-top: 20px" v-if="isLineOne">
@@ -29,8 +29,8 @@
     export default {
         data(){
             return {
-                lineOne: true,
-                lineTwo: true,
+                lineOne: false,
+                lineTwo: false,
 
                 isLineOne: false,
                 isLineTwo: false,
@@ -147,9 +147,6 @@
                 await this.timeout(300);
 
                 await this.actionLineTwo();
-                await this.timeout(300);
-
-                await this.actionLineOne();
                 await this.timeout(300);
 
                 await this.actionLineOne();
